@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #F0F8FF;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#strona {
+	width: 1000px;
+	height: 2500px;
+	background-color: #9DC0CC;
+	margin: 0 auto;
+	border-radius: 8px;
+	box-shadow: 5px 5px 4px #355A67;
+}
+
+#plansza {
+	background-color: #FFF;
+	margin: 50px 0 0 50px;
+	border: 1px solid black;
+	float: left;
+}
+
+#text {
+	width: 230px;
+	height: 580px;
+	background-color: #A8CC9D ;
+	margin: 50px 50px 0 0;
+	border: 1px solid black;
+	border-radius: 8px;
+	float: right;
+	padding: 10px 10px;
+	box-shadow: 5px 5px 4px #416735;
+}
+
+#punkty_po_wybraniu {
+	display: none;
+}
+
+#wybor {
+	margin-top: 10px;
+}
+
+#litery {
+	width: 14px;
+	height: 415px;
+	padding: 10px 0 0 3px;
+	float: left;
+	line-height: 169%;
+}
+
+#x_y {
+	width: 42px;
+	height: 415px;
+	padding: 10px 0 0 1px;
+	float: left;
+	line-height: 169%;
+}
+
+#pola_wyboru {
+	width: 100px;
+	height: 415px;
+	padding: 10px 0 0 6px;
+	float: left;
+}
+
+#dalej {
+	display: none;
+}
+
+#plansza {
+	border-radius: 8px;
+	box-shadow: 5px 5px 4px #595959;
+}
+
+#informacje {
+	width: 210px;
+	height: 60px;
+	color: #121F24;
+	padding: 25px 10px 10px 10px;
+	clear: both;
+}
+
+#informacje_ostrzezenie {
+	display: none;
+}
+
+#wyniki {
+	width: 580px;
+	height: 400px;
+	float: left;
+	margin: 30px 0 0 50px;
+	padding: 10px 10px 10px 10px;
+	line-height: 1.5em;
+}
+
+select {
+	height: 27px;
+}
+
+select[disabled]{
+  background-color: #A8CC9D;
+  color: #000;
+  border: 1px solid black;
+}
+
+button {
+	height: 27px;
+}

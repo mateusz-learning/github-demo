@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+	<title>Dylemat Więźnia</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div>
+		<h1 id="powitanie">Witajcie w grze "Dylemat Więźnia".</h1>
+	</div>
+	<div id="zasady_tekst">
+		<p> Jest to sytuacja, w której występują dwie strony.
+		Zawarły one porozumienie, w wyniku czego mają do wyboru dwie strategie, albo dotrzymać zawartej umowy albo oszukać partnera.
+		Dylemat więźnia polega na tym, że powstaje sytuacja, w której oszustwo jednej strony daje jej znacznie większy zysk niż w przypadku przestrzegania postanowień umowy,
+		jednakże oszustwo obu stron jednocześnie obniża ich korzyści tak, że stają się one mniejsze, niż w sytuacji obustronnego przestrzegania ustalonych zasad.
+		Problem wyboru najwłaściwszego rozwiązania dla uczestników rozwiązuje się na gruncie nauki zwanej teorią gier.</p>
+	</div>
+	<div>
+		<table>
+			<tr>
+				<th colspan="3">Payoff</th>
+			</tr>
+			<tr>
+				<td style="background-color: black"></td>
+				<td>Współpraca</td>
+				<td>Zdrada</td>
+			</tr>
+			<tr>
+				<td>Współpraca</td>
+				<td>3 | 3</td>
+				<td>0 | 5</td>
+			</tr>
+			<tr>
+				<td>Zdrada</td>
+				<td>5 | 0</td>
+				<td>1 | 1</td>
+			</tr>
+		</table>
+	</div>
+	<div id="przyciski">
+		<button type="button" id="wspolpraca">Współpraca</button>
+		<button type="button" id="zdrada">Zdrada</button>
+		<button type="button" id="zasady">Zasady</button>
+		<button type="button" onClick="window.location.href=window.location.href">Reset</button>
+	</div>
+	<div id="wyniki">
+		<br><br>
+		<table id="rozgrywka">
+			<thead>
+				<tr align="center">
+					<th colspan="6">Przebieg rozgrywki</th>
+				</tr>
+				<tr>
+					<td colspan="3">Gracz</td>
+					<td colspan="3">Komputer</td>
+				</tr>
+				<tr>
+					<td>Runda</td>
+					<td>Decyzja</td>
+					<td>Wynik</td>
+					<td>Runda</td>
+					<td>Decyzja</td>
+					<td>Wynik</td>
+				</tr>
+			</thead>
+			<tbody id="kolejne_rundy">
+				<tr id="biezaca_runda">
+					<td class="numer_rundy">-</td>
+					<td id="gracz_decyzja">-</td>
+					<td id="gracz_wynik">-</td>
+					<td class="numer_rundy">-</td>
+					<td id="komputer_decyzja">-</td>
+					<td id="komputer_wynik">-</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2">Suma</td>
+					<td id="suma_punktow_gracza">0</td>
+					<td colspan="2">Suma</td>
+					<td id="suma_punktow_komputera">0</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</body>
+</html>

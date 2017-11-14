@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Znajdowanie drogi</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="jquery.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+	<div id="strona">
+		<canvas id="plansza" width="600px" height="600px"></canvas>
+
+		<div id="text">
+			<p id="punkty_przed_wybraniem">Wybierz liczbę punktów:</p>
+			<p id="punkty_po_wybraniu">Wybrane punkty:</p>
+			<div id="wybor">
+				<select id="liczba_punktow_pole">
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+				</select>
+				<button type="button" id="liczba_punktow_potwierdz">Ok</button>
+				<button type="button" id="dalej">Dalej</button>
+				<button type="button" onClick="window.location.href=window.location.href">Reset</button>
+			</div>
+			<div id="wybierz_punkty">
+				<div id="litery">
+				</div>
+				<div id="x_y">
+				</div>
+				<div id="pola_wyboru">
+				</div>
+				<div id="informacje">
+					<p id="informacje_start">Punkt A jest punktem startowym.</p>
+					<p id="informacje_ostrzezenie">Punkty muszą mieć różne współrzędne.</p>
+				</div>
+			</div>
+		</div>
+		<div id="wyniki">
+		</div>
+	</div>
+</body>
+</html>

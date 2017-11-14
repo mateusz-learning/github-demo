@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strona</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" charset="UTF-8"></script>
+	<script src="jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="zadanie">
+			<div id="text">
+				<h1>Funkcja przystosowania: f(x) = - <span id="ulamek"><sup>x<sup>2</sup></sup>&frasl;<sub>60</sub></span> + 5x + 25.</h1>
+				<p>Funkcja ta osiąga wartość maksymalną dla x równego 150 i wynosi ona 400.</p>
+				<p>Dla populacji liczącej sześć osobników, maksymalna wartość przystosowania wynosi 2400 (400 * 6).</p>
+				<button type="button" id="losowo">Losowo</button>
+				<button type="button" onClick="window.location.href=window.location.href">Restart</button>
+			</div>
+			<div id="dane_populacji">
+				<form id="populacja">
+					Osobnik nr 1:<br>
+					<input type="text" id="osobnik_1" class="poprawne_dane">
+					<button type="button" id="losowo_1">Losuj</button>
+					<br>
+					Osobnik nr 2:<br>
+					<input type="text" id="osobnik_2" class="poprawne_dane">
+					<button type="button" id="losowo_2">Losuj</button>
+					<br>
+					Osobnik nr 3:<br>
+					<input type="text" id="osobnik_3" class="poprawne_dane">
+					<button type="button" id="losowo_3">Losuj</button>
+					<br>
+					Osobnik nr 4:<br>
+					<input type="text" id="osobnik_4" class="poprawne_dane">
+					<button type="button" id="losowo_4">Losuj</button>
+					<br>
+					Osobnik nr 5:<br>
+					<input type="text" id="osobnik_5" class="poprawne_dane">
+					<button type="button" id="losowo_5">Losuj</button>
+					<br>
+					Osobnik nr 6:<br>
+					<input type="text" id="osobnik_6" class="poprawne_dane">
+					<button type="button" id="losowo_6">Losuj</button>
+					<br>
+				</form>
+				<button type="button" id="potwierdz">ok</button>
+				<p id="czy_kontynuowac"><br>Proszę nacisnąć "dalej", aby kontynuować lub "zmień", aby jeszcze raz wprowadzić populację.</p>
+				<button type="button" id="zmien">zmień</button>
+				<button type="button" id="dalej">dalej</button>
+				
+				<form id="wspolczynniki">
+					<div id="informacje">
+						<p>Zakresy liczbowe dla poniższych wartości współczynników, zawierają się przedziale 0.00 - 1.00.<p>
+						<p>Wartość dla współczynnika krzyżowania jest większa lub równa wartości współczynnika mutacji.<p>
+						<p class="odstep">Liczba powtórzeń zawiera się w przedziale 10 - 100.</p>
+					</div>
+					Współczynnik mutacji: <input type="text" value="0.00 - 1.00" onClick="this.select()" id="wybrany_wspolczynnik_mutacji" class="poprawne_dane">
+					Współczynnik krzyżowania: <input type="text" value="0.00 - 1.00" onClick="this.select()" id="wybrany_wspolczynnik_krzyzowania" class="poprawne_dane">
+					Liczba powtórzeń: <input type="text" value="10 - 100" onClick="this.select()" id="wybrana_liczba_powtorzen" class="poprawne_dane">
+					<button type="button" id="potwierdz_wspolczynniki">dalej</button>
+					<p id="wspolczynnik_informacja">Wartość Współczynnika krzyżowania powinna być większa od wartości współczynnika mutacji.<p>
+				</form>
+			</div>
+			<div id="wykres_funkcji_przystosowania">
+				<img id="obrazek" src="wykres_funkcji.bmp"></img>
+			</div>
+		</div>
+		<div id="wykres_kolejnych_populacji">
+		</div>
+	</div>
+</body>
+</html>

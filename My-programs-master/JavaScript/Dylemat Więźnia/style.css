@@ -1,0 +1,43 @@
+body {
+	background-color: #d0e4fe;
+}
+
+table, td {
+	width: 300px;
+	margin-left: 10%;
+	border: 3px solid black;
+	border-collapse: collapse;
+	border-color: white;
+	text-align: center;
+}
+
+#powitanie {
+	font-size: 38px;
+	color: red;
+	text-align: center;
+}
+
+#przyciski {
+	margin-left: 10%;
+}
+
+#zasady_tekst {
+	width: 400px;
+	text-align: justify;
+	padding: 0 10px 0 10px;
+	border: 3px solid red;
+	float: right;
+	font-size: 20px;
+	display: none;
+}
+
+#rozgrywka {
+	width: 500px;
+	float: left;
+	margin-left: 10%;
+}
+
+#biezaca_runda {
+	background-color: #EEEEEE;
+	border-bottom: 5px solid black;
+}
